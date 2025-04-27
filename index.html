@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <div class="col col-1">
+      <div class="image-layer">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20201123/pngtree-rocket-starry-sky-moon-rocket-launch-image_497315.jpg" class="form-image-rocket">
+      </div>
+      <p class="featured-words">You are few minutes away to boost your skills with <span>ludiflex</span></p>
+    </div>
+
+    <div class="col col-2">
+      <div class="btn-box">
+        <button class="btn btn-1" id="login">Sign In</button>
+        <button class="btn btn-2" id="register">Sign Up</button>
+      </div>
+
+       <!-- Login Form --> 
+       <form class="login-form form" id="login-form">
+        <div class="form-title"><span>Sign In</span></div>
+        <div class="form-input">
+          <div class="input-box">
+            <input type="text" class="input-field" name="email" placeholder="email" required />
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" name="password" placeholder="Password" required />
+            <i class="fa-solid fa-lock-keyhole"></i>
+          </div>
+          <div class="forgot-password"><a href="#">Forgot password?</a></div>
+          <div class="input-box">
+            <button type="submit" class="input-submit">
+              <span>Sign In</span>
+              <i class="fa-solid fa-square-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="social-login">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </form> 
+     
+      <!-- Register Form -->
+      <form class="register-form form" id="register-form">
+        <div class="form-title"><span>Create Account</span></div>
+        <div class="form-input">
+          <div class="input-box">
+            <input type="text" class="input-field" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-box">
+            <input type="text" class="input-field" placeholder="Username" required />
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" name="password" placeholder="Password" required />
+            <i class="fa-solid fa-lock-keyhole"></i>
+          </div>
+          <div class="forgot-password"><a href="#">Forgot password?</a></div>
+          <div class="input-box">
+            <button type="submit" class="input-submit">
+              <span>Sign Up</span>
+              <i class="fa-solid fa-square-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="social-login">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
