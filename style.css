@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: url(https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.form-container{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    border-radius: 0 30% 20% 0;
+    transition: -3s;
+}
+
+.image-layer{
+    position: relative;
+}
+
+.form-image-main{
+    width: 400;
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.form-image-rocket{
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+@keyframes left-right{
+    to{
+        transform: translatex(10px);
+    }
+}
+
+@keyframes up-down{
+    to{
+        transform: translatex(10px);
+    }
+}
+
+@keyframes scale-down{
+    to{
+        transform: translatex(0.95);
+    }
+}
+
+@keyframes scale-up{
+    to{
+        transform: translatex(1.05);
+    }
+}
+
+
+
+.form-image{
+    position: absolute;
+    left: 0;
+    width: 400px;
+}
+
+.featured-words{
+    text-align: center;
+    color: white;
+    width: 300px;
+    font-size: 20px;
+
+}
+.featured-words span{
+    font-size: 600;
+    color: black;
+}
+
+.col-2{
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    overflow: hidden;
+
+}
+
+.btn-b0x{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background:  rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 5px 5px black;
+    cursor: pointer;
+    transition: -2s;
+}
+
+.btn-1{
+    background: rgb(17, 17, 18);
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.login-form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vh;
+    transition: -3s;
+}  
+
+ /* register form */ */
+
+  .register-form{
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 0 4vh;
+transition: -3s;
+}
+
+.register-form .form-title{
+    margin-block: 40px 20px;
+
+}
+
+.form-title{
+    margin: 40px 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-input{
+    width: 100%;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px black;
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transition: translatey(-50%);
+    color: white;
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+.forgot-password a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+
+}
+
+.input-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: -3s;
+}
+
+.input-submit:hover{
+    gap: 15px;
+}
+
+.social-login{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-login i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10 rgba(255, 255, 255, 0.2);
+    transition: -2s;
+}
+
+.social-login i:hover{
+    transform: scale(0.9);
+}  
+
+         /* responsive */
+
+
+
+
+         @media (max-width:892){
+            .form-container{
+                width: 400px;
+            }
+
+            .col-1{
+                display: none;
+            }
+
+            .col-2{
+                width: 100%;
+            }
+         }   
+
+         .form {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.5s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .form.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+
+        @media (max-width: 992px) {
+            .form-container {
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+                padding: 20px;
+            }
+        
+            .col-1 {
+                width: 100%;
+                border-radius: 30px 30px 0 0;
+                padding: 20px;
+            }
+        
+            .col-2 {
+                width: 100%;
+                padding: 20px;
+                position: relative;
+            }
+        
+            .form {
+                position: static;
+                transform: none;
+                top: auto;
+                left: auto;
+                opacity: 1 !important;
+                pointer-events: auto !important;
+                transition: none;
+            }
+        
+            .btn-box {
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .btn {
+                padding: 10px 20px;
+            }
+        
+            .form-title {
+                font-size: 24px;
+            }
+        
+            .input-box {
+                width: 100%;
+            }
+        
+            .social-login {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .featured-words {
+                font-size: 16px;
+                width: auto;
+                padding: 0 10px;
+            }
+        
+            .form-title {
+                font-size: 20px;
+            }
+        
+            .input-field {
+                height: 45px;
+            }
+        
+            .input-submit {
+                height: 45px;
+            }
+        
+            .social-login i {
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+              flex-direction: column;
+              width: 100%;
+              height: auto;
+            }
+            .col-1, .col-2 {
+              width: 100%;
+              height: auto;
+              border-radius: 0;
+            }
+            .form-image {
+              width: 100%;
+              height: auto;
+            }
+          }
+          
+           /* PAGE DESIGN */
+    
